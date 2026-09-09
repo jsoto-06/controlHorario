@@ -1,0 +1,62 @@
+{
+  "entities": {
+    "YearSchedule": {
+      "title": "YearSchedule",
+      "description": "Annual schedule containing employees list and daily shift assignments",
+      "type": "object",
+      "properties": {
+        "year": {
+          "type": "number",
+          "description": "Calendar year"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "ISO timestamp of last update"
+        },
+        "employees": {
+          "type": "array",
+          "description": "List of employees for this year"
+        },
+        "days": {
+          "type": "array",
+          "description": "365 or 366 daily shift assignments"
+        }
+      },
+      "required": ["year", "updatedAt", "employees", "days"]
+    },
+    "UserCredential": {
+      "title": "UserCredential",
+      "description": "User access PIN and role",
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string",
+          "description": "Identifier of the user or employee"
+        },
+        "pin": {
+          "type": "string",
+          "description": "Access PIN or password"
+        },
+        "role": {
+          "type": "string",
+          "description": "Role: admin or worker"
+        },
+        "updatedAt": {
+          "type": "string",
+          "description": "Timestamp of last modification"
+        }
+      },
+      "required": ["userId", "pin", "role"]
+    }
+  },
+  "firestore": {
+    "/schedules/{yearId}": {
+      "schema": "YearSchedule",
+      "description": "Annual schedule document indexed by year (e.g., '2026')"
+    },
+    "/user_credentials/{userId}": {
+      "schema": "UserCredential",
+      "description": "Stored user PINs and permissions"
+    }
+  }
+}

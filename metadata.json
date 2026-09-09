@@ -1,0 +1,6 @@
+{
+  "name": "Gestor de Horarios y Cuadrantes Anuales",
+  "description": "Gestión, creación y modificación anual de cuadrantes de turnos de empleados con cómputo de horas, exportación Excel y balance de turnos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
