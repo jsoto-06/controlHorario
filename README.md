@@ -165,37 +165,7 @@ VITE_FIREBASE_APP_ID=
 
 ---
 
-## 🐙 Cómo Subir a GitHub
-
-### Opción A: Desde Google AI Studio (Recomendada y Directa)
-1. En la esquina superior de la interfaz de Google AI Studio, abre el menú de opciones (**Settings** / **Export**).
-2. Selecciona **"Export to GitHub"** (o "Descargar ZIP").
-3. Selecciona tu cuenta de GitHub y el nombre del repositorio deseado. ¡AI Studio subirá todo el código listo con este README y la guía!
-
-### Opción B: Mediante Línea de Comandos (Git)
-Si descargaste el código o estás trabajando en tu terminal:
-
-1. **Crea un nuevo repositorio vacío en [GitHub](https://github.com/new)** (por ejemplo: `gestor-horarios-cuadrantes`).
-2. **Ejecuta los siguientes comandos en la carpeta del proyecto**:
-   ```bash
-   # Inicializar git
-   git init
-
-   # Añadir todos los archivos
-   git add .
-
-   # Crear el commit inicial
-   git commit -m "feat: versión inicial del Gestor de Horarios y Cuadrantes"
-
-   # Vincular con tu repositorio de GitHub (reemplaza TU-USUARIO por tu usuario)
-   git remote add origin https://github.com/TU-USUARIO/gestor-horarios-cuadrantes.git
-
-   # Subir a la rama principal
-   git branch -M main
-   git push -u origin main
-   ```
-
----
+--
 
 ## 🔑 Roles y Permisos de Acceso
 
